@@ -10,22 +10,16 @@ services:
 
     web_server1:
         image: web_server1:latest
-#        ports:
-#            - 8081:80
         networks:
             app_net:
                 ipv4_address: 172.16.0.101
     web_server2:
         image: web_server2:latest
-#        ports:
-#            - 8082:80
         networks:
             app_net:
                 ipv4_address: 172.16.0.102
     web_server3:
         image: web_server3:latest
-#        ports:
-#            - 8083:80
         networks:
             app_net:
                 ipv4_address: 172.16.0.103
